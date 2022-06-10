@@ -1,0 +1,240 @@
+body {
+  background-image: linear-gradient(#11052c, #3d087b);
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  flex-direction: column;
+  overflow: hidden;
+}
+.container {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  text-align: center;
+  flex-direction: column;
+}
+.turn {
+  margin-top: 2% auto;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.each-turn {
+  font-size: 3rem;
+  color: #1ee3cf;
+  font-weight: 900;
+  font-size: 4rem;
+}
+.area {
+  width: 80%;
+}
+.td {
+  background-color: #03045e;
+  font-size: 7rem;
+  color: #e1e8eb;
+  font-weight: 900;
+  width: 25%;
+  height: 10rem;
+  margin: 1.2%;
+  border-radius: 8px;
+  box-shadow: 2px 3px 15px #11052c;
+}
+.td:hover {
+  background-color: #060930;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay-2 {
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.player-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  z-index: 5;
+  position: absolute;
+  background-color: #111d5e;
+  text-align: center;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.opponent {
+  background-color: #111d5e;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.heading {
+  font-size: 3rem;
+  padding: 3%;
+}
+.option-1 {
+  border-right: 2px solid #2b3b92;
+}
+.options {
+  font-size: 5rem;
+  padding: 3%;
+  transition: 0.1s;
+}
+.options:hover {
+  background-color: #202f85;
+}
+.player {
+  font-size: 7rem;
+  padding: 15% 10%;
+  transition: 0.1s;
+  width: 50%;
+  color: white;
+}
+.player:hover {
+  background-color: #202f85;
+  border-radius: 10px;
+}
+.player-1 {
+  border-right: 2px solid #2b3b92;
+  width: 50%;
+  font-weight: 900;
+  color: #1ee3cf;
+}
+.player-2 {
+  width: 50%;
+  font-weight: 900;
+  color: #ffab4c;
+}
+.winner {
+  position: absolute;
+  background-color: #241663;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  animation: move 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+}
+.flex {
+  display: flex;
+}
+@keyframes move {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.player-wins {
+  padding: 2% 10% 2%;
+  margin-bottom: 0;
+}
+.player-wins::first-letter {
+  font-weight: 900;
+}
+button {
+  font-size: 3rem;
+  padding: 2% 2%;
+  width: 10%;
+  margin-bottom: 7%;
+  background-color: #9f1e49;
+  border: 1px solid #9f1e49;
+  border-radius: 5px;
+  box-shadow: 2px 4px 7px #1c114e;
+  color: white;
+}
+button:hover {
+  background-color: #ee4266;
+  cursor: pointer;
+  border: 1px solid #ee4266;
+}
+.scores {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.each {
+  padding: 2%;
+  font-size: 2rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 3px 15px #11052c;
+}
+.each::first-letter {
+  font-weight: 900;
+}
+.score-x {
+  background-color: #1ee3cf;
+  margin-right: 2%;
+  color: black;
+}
+.score-0 {
+  background-color: #827397;
+  margin: 0 2%;
+}
+.score-o {
+  background-color: #ffab4c;
+  margin-left: 2%;
+  color: black;
+}
+
+/* media queries */
+@media (max-width: 990px) {
+  .td {
+    width: 30%;
+  }
+  .area {
+    width: 100%;
+  }
+  .scores {
+    width: 100%;
+    padding: 1%;
+  }
+  .player-select {
+    width: 70%;
+  }
+}
+@media (max-width: 1020px) {
+  .options {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 615px) {
+  .options {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1200px) and (min-width: 991px) {
+  .scores {
+    width: 70%;
+    padding: 1%;
+  }
+}

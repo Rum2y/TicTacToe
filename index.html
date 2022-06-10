@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="turn">Turn: <span class="each-turn">X</span></div>
+    <div class="container">
+      <div class="row justify-content-center area">
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+        <div class="col-4 td">X</div>
+      </div>
+      <div class="row scores">
+        <div class="col each score-x">X 0 wins</div>
+        <div class="col each score-0">0 Draws</div>
+        <div class="col each score-o">O 0 wins</div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="row opponent hidden">
+      <div class="col-12 heading">Choose Your Opponent</div>
+      <div class="col-6 options option-1">Computer AI</div>
+      <div class="col-6 options">Multiplayer</div>
+    </div>
+    <div class="row player-select hidden">
+      <div class="col player-1 player hidden">X</div>
+      <div class="col player-2 player hidden">O</div>
+    </div>
+    <div class="overlay-2 hidden"></div>
+    <div class="winner hidden">
+      <div class="row justify-content-center">
+        <p class="col-12 player-wins">X WINS!</p>
+        <button class="col-6">Next Round</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
